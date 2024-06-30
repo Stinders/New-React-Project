@@ -1,10 +1,10 @@
 import React from 'react'
 
-function TabButton({label, onSelect}) {
+function TabButton({label, onSelect, isSelected}) {
   
   return (
     <div>
-      <button onClick={onSelect}>{label}</button>
+      <button className={isSelected ? 'active' : ''}onClick={onSelect}>{label}</button>
     </div>
   )
 }
